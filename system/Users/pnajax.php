@@ -66,7 +66,7 @@ function Users_ajax_getusers()
 function Users_ajax_checkuser()
 {
     if (!SecurityUtil::confirmAuthKey()) {
-        AjaxUtil::error(FormUtil::getPassedValue('authid') . ' : ' . __("Sorry! Invalid authorisation key ('authkey'). This is probably either because you pressed the 'Back' button to return to a page which does not allow that, or else because the page's authorisation key expired due to prolonged inactivity. Please refresh the page and try again."));
+        AjaxUtil::error(__("Sorry! Invalid authorisation key ('authkey'). This is probably either because you pressed the 'Back' button to return to a page which does not allow that, or else because the page's authorisation key expired due to prolonged inactivity. Please refresh the page and try again."));
     }
 
     $modvars = pnModGetVar('Users');
