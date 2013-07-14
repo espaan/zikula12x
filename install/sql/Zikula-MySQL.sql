@@ -590,7 +590,7 @@ INSERT INTO `z_module_vars` VALUES (75,'/PNConfig','timezone_server','s:1:\"0\";
 INSERT INTO `z_module_vars` VALUES (76,'/PNConfig','funtext','s:1:\"1\";');
 INSERT INTO `z_module_vars` VALUES (77,'/PNConfig','reportlevel','s:1:\"0\";');
 INSERT INTO `z_module_vars` VALUES (78,'/PNConfig','startpage','s:0:\"\";');
-INSERT INTO `z_module_vars` VALUES (79,'/PNConfig','Version_Num','s:5:\"1.2.9\";');
+INSERT INTO `z_module_vars` VALUES (79,'/PNConfig','Version_Num','s:6:\"1.2.10\";');
 INSERT INTO `z_module_vars` VALUES (80,'/PNConfig','Version_ID','s:6:\"Zikula\";');
 INSERT INTO `z_module_vars` VALUES (81,'/PNConfig','Version_Sub','s:6:\"forest\";');
 INSERT INTO `z_module_vars` VALUES (82,'/PNConfig','debug_sql','s:1:\"0\";');
@@ -636,7 +636,7 @@ INSERT INTO `z_module_vars` VALUES (121,'/PNConfig','onlysendsummarybyemail','i:
 INSERT INTO `z_module_vars` VALUES (122,'/PNConfig','updatecheck','i:1;');
 INSERT INTO `z_module_vars` VALUES (123,'/PNConfig','updatefrequency','i:7;');
 INSERT INTO `z_module_vars` VALUES (124,'/PNConfig','updatelastchecked','0');
-INSERT INTO `z_module_vars` VALUES (125,'/PNConfig','updateversion','s:5:\"1.2.9\";');
+INSERT INTO `z_module_vars` VALUES (125,'/PNConfig','updateversion','s:6:\"1.2.10\";');
 INSERT INTO `z_module_vars` VALUES (126,'/PNConfig','keyexpiry','0');
 INSERT INTO `z_module_vars` VALUES (127,'/PNConfig','sessionauthkeyua','b:0;');
 INSERT INTO `z_module_vars` VALUES (128,'/PNConfig','secure_domain','s:0:\"\";');

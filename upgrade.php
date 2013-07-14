@@ -31,7 +31,7 @@ if (!function_exists('file_put_contents') && !defined('FILE_APPEND')) {
 ini_set('max_execution_time', 86400);
 
 // load zikula core
-define('_PNINSTALLVER', '1.2.9');
+define('_PNINSTALLVER', '1.2.10');
 define('_PN_MINUPGVER', '1.1.0');
 
 // include config file for retrieving name of temporary directory

@@ -14,7 +14,7 @@
  * Core version informations - should be upgraded on each release for
  * better control on config settings
  */
-define('PN_VERSION_NUM', '1.2.9');
+define('PN_VERSION_NUM', '1.2.10');
 define('PN_VERSION_ID', 'Zikula');
 define('PN_VERSION_SUB', 'forest');
 

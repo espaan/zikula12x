@@ -20,7 +20,7 @@ function callusercheck()
 {
     var pars = "module=Users&func=checkuser&" + Form.serialize('newuser');
     var myAjax = new Ajax.Request(
-        document.location.pnbaseURL + "ajax.php",
+        Zikula.Config.baseURL + "ajax.php",
         {
             method: 'post',
             parameters: pars,
@@ -155,14 +155,14 @@ function showdynamicsmenu()
 function liveusersearch()
 {
     Element.removeClassName('liveusersearch', 'z-hide');
-    Event.observe('modifyuser', 'click', function() { window.location.href=document.location.entrypoint + "?module=Users&type=admin&func=modify&uname=" + $F('username');}, false);
-    Event.observe('deleteuser', 'click', function() { window.location.href=document.location.entrypoint + "?module=Users&type=admin&func=deleteusers&uname=" + $F('username');}, false);
-    new Ajax.Autocompleter('username', 'username_choices', document.location.pnbaseURL + 'ajax.php?module=Users&func=getusers',
+    Event.observe('modifyuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=modify&uname=" + $F('username');}, false);
+    Event.observe('deleteuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=deleteusers&uname=" + $F('username');}, false);
+    new Ajax.Autocompleter('username', 'username_choices', document.Zikula.Config.baseURL + 'ajax.php?module=Users&func=getusers',
                            {paramName: 'fragment',
                             minChars: 3,
                             afterUpdateElement: function(data){
-                                Event.observe('modifyuser', 'click', function() { window.location.href=document.location.entrypoint + "?module=Users&type=admin&func=modify&userid=" + $($(data).value).value;}, false);
-                                Event.observe('deleteuser', 'click', function() { window.location.href=document.location.entrypoint + "?module=Users&type=admin&func=deleteusers&userid=" + $($(data).value).value;}, false);
+                                Event.observe('modifyuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=modify&userid=" + $($(data).value).value;}, false);
+                                Event.observe('deleteuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=deleteusers&userid=" + $($(data).value).value;}, false);
                                 }
                             }
                             );

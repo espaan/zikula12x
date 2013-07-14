@@ -65,7 +65,7 @@ function profileweightchanged()
                + "&" + Sortable.serialize('profilelist', { 'name': 'profilelist' });
 
     var myAjax = new Ajax.Request(
-        document.location.pnbaseURL+'ajax.php', 
+        Zikula.Config.baseURL+'ajax.php', 
         {
             method: 'get', 
             parameters: pars, 
@@ -107,7 +107,7 @@ function profilestatuschanged(prop_id, oldstatus)
                + "&oldstatus=" + oldstatus + "&dudid=" + prop_id;
 
     var myAjax = new Ajax.Request(
-        document.location.pnbaseURL+'ajax.php', 
+        Zikula.Config.baseURL+'ajax.php', 
         {
             method: 'get', 
             parameters: pars, 

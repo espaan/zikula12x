@@ -1,3 +1,7 @@
+CHANGELOG - ZIKULA 1.2.10
+------------------------
+Google Chrome 23 javascript document.location vars problem fixed.
+
 CHANGELOG - ZIKULA 1.2.9
 ------------------------
 Backported highlighting feature from 1.3 branch - issue #3176
