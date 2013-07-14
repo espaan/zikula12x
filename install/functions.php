@@ -16,7 +16,7 @@ function install()
     // error reporting level for debugging
     ini_set('max_execution_time', 86400);
 
-    define('_PNINSTALLVER', '1.2.9-dev');
+    define('_PNINSTALLVER', '1.2.9');
 
     $installbySQL = false;
 
