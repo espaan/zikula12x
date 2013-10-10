@@ -20,7 +20,7 @@ function callusercheck()
 {
     var pars = "module=Users&func=checkuser&" + Form.serialize('newuser');
     var myAjax = new Ajax.Request(
-        Zikula.Config.baseURL + "ajax.php",
+        Zikula.Config.pnbaseURL + "ajax.php",
         {
             method: 'post',
             parameters: pars,
@@ -157,7 +157,7 @@ function liveusersearch()
     Element.removeClassName('liveusersearch', 'z-hide');
     Event.observe('modifyuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=modify&uname=" + $F('username');}, false);
     Event.observe('deleteuser', 'click', function() { window.location.href=Zikula.Config.entrypoint + "?module=Users&type=admin&func=deleteusers&uname=" + $F('username');}, false);
-    new Ajax.Autocompleter('username', 'username_choices', Zikula.Config.baseURL + 'ajax.php?module=Users&func=getusers',
+    new Ajax.Autocompleter('username', 'username_choices', Zikula.Config.pnbaseURL + 'ajax.php?module=Users&func=getusers',
                            {paramName: 'fragment',
                             minChars: 3,
                             afterUpdateElement: function(data){

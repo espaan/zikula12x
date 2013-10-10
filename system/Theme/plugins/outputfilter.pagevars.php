@@ -115,7 +115,7 @@ function smarty_outputfilter_pagevars($source, &$smarty)
         // enabled. We will now add some inline javascript to extend the DOM:
         //
         // Zikula.Config.entrypoint: will be set to what is configured to be the entrypoint
-        // Zikula.Config.baseURL: will point to the result of pnGetBaseURL();
+        // Zikula.Config.pnbaseURL: will point to the result of pnGetBaseURL();
         //
         // todo: make his more unobtrusive, but how? Dynamic javascript creation might be a performance problem. Any idea here
         // is highly appreciated! [landseer]
